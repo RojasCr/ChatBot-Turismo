@@ -1,0 +1,4 @@
+¿Te gustaría reservar para este destino?
+
+1- Si
+2- No

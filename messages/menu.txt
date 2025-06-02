@@ -1,0 +1,5 @@
+¿Qué deseas hacer?
+
+1- Consultar por un destino
+2- Realizar una reserva
+3- Recomendame un destino

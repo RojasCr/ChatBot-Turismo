@@ -1,0 +1,165 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491162029649@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB070A962CC317D90E4CA',
+    participant: undefined
+  },
+  messageTimestamp: 1748901996,
+  pushName: 'Cristian Rojas',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '1',
+  from: '5491162029649'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491162029649@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0EF3135E4EE13570F71',
+    participant: undefined
+  },
+  messageTimestamp: 1748902004,
+  pushName: 'Cristian Rojas',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '1',
+  from: '5491162029649'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_3109145e-25dd-4645-9164-94332871e142',
+  keyword: 'key_42da16a8-9978-4871-81f3-5e4de9f7a4c7',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '1b3f39932b4d2f35e3fe8d3e808d274f'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491162029649@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0DF157E80004F05F4B2',
+    participant: undefined
+  },
+  messageTimestamp: 1748902010,
+  pushName: 'Cristian Rojas',
+  broadcast: false,
+  message: Message {
+    conversation: '3',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '3',
+  from: '5491162029649'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491162029649@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0EC0B358C018B3D12A9',
+    participant: undefined
+  },
+  messageTimestamp: 1748902030,
+  pushName: 'Cristian Rojas',
+  broadcast: false,
+  message: Message {
+    conversation: 'Si',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Si',
+  from: '5491162029649'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491162029649@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB089655BBF3484978E76',
+    participant: undefined
+  },
+  messageTimestamp: 1748902049,
+  pushName: 'Cristian Rojas',
+  broadcast: false,
+  message: Message {
+    conversation: 'Si',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Si',
+  from: '5491162029649'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491162029649@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0CBAB88B58FB30D3A1D',
+    participant: undefined
+  },
+  messageTimestamp: 1748902070,
+  pushName: 'Cristian Rojas',
+  broadcast: false,
+  message: Message {
+    conversation: 'No',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'No',
+  from: '5491162029649'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491162029649@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB00E022D5ED4D09D59C9',
+    participant: undefined
+  },
+  messageTimestamp: 1748902078,
+  pushName: 'Cristian Rojas',
+  broadcast: false,
+  message: Message {
+    conversation: '2',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '2',
+  from: '5491162029649'
+}

@@ -1,0 +1,472 @@
+[
+  {
+    "ref": "2c467742-dc1d-4d29-a575-ec99eb9cad61",
+    "keyword": "d09c129a5b1f73a77525f293f5c917ec",
+    "answer": "1",
+    "options": {},
+    "from": "5491162029649",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "04238831-a4f6-4374-bdf8-d86c7123c379",
+    "keyword": "290236b1d481a790a200ea6e94b2122a",
+    "answer": "1",
+    "options": {},
+    "from": "5491162029649",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "ans_3109145e-25dd-4645-9164-94332871e142",
+    "keyword": "key_42da16a8-9978-4871-81f3-5e4de9f7a4c7",
+    "answer": "__call_action__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "1b3f39932b4d2f35e3fe8d3e808d274f",
+    "from": "5491162029649"
+  },
+  {
+    "ref": "ans_39f68458-16ac-4bd2-90b7-e6957858801e",
+    "keyword": "key_93b409b7-71ca-4cbc-a228-32c77465becb",
+    "answer": "Hola! 🤗 \r\nGracias por comunicarte con el equipo de ventas y atención al pasajero. 🚌\r\n\r\n",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 1500,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "64f60d682c9db513340502656845645d",
+    "from": "5491162029649"
+  },
+  {
+    "ref": "ans_6eb5aae8-2cf9-4c10-91f5-b8bdcbde82f1",
+    "keyword": "key_70ae5bc0-a325-4250-9b48-63b36840c342",
+    "answer": "¿Qué deseas hacer?\r\n\r\n1- Consultar por un destino\r\n2- Realizar una reserva\r\n3- Recomendame un destino",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 1500,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "1ff40e76486f0de6f3a3f8e4afab741a",
+    "from": "5491162029649"
+  },
+  {
+    "ref": "73dd955e-7f96-4a6b-87bc-073795df72a7",
+    "keyword": "1ff40e76486f0de6f3a3f8e4afab741a",
+    "answer": "3",
+    "options": {},
+    "from": "5491162029649",
+    "refSerialize": "7af65864494b12f0f7ef00589f4d3979"
+  },
+  {
+    "ref": "ans_ab64710b-1148-44ae-9214-896f3d90c060",
+    "keyword": "key_453a1de0-d009-4bc3-94e5-4efafb4f4fdf",
+    "answer": "Recomendando destino...",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "9b79fb5cb21a556d52df651564e32e02",
+    "from": "5491162029649"
+  },
+  {
+    "ref": "ans_3a4b5fc0-74eb-442c-a98c-5999cf7cf7f8",
+    "keyword": "ans_ab64710b-1148-44ae-9214-896f3d90c060",
+    "answer": "__call_action__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "4551230c0eb12982bf53376ac9b57a7c",
+    "from": "5491162029649"
+  },
+  {
+    "ref": "ans_b3b799e8-9ecc-45eb-bc06-316c054a522f",
+    "keyword": "key_e077cef1-bdcd-4c0d-987c-f1ec68b8dad1",
+    "answer": "__call_action__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "af092fdc2f0b52008399f2a242c183e8",
+    "from": "5491162029649"
+  },
+  {
+    "ref": "ans_31a622cf-d552-49b5-b84f-0852cde4d6e7",
+    "keyword": "ans_b3b799e8-9ecc-45eb-bc06-316c054a522f",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "523bd6af4f3af6997af2545156c2acec",
+    "from": "5491162029649"
+  },
+  {
+    "ref": "fc281f07-fb84-4f2b-95f2-4aa79ffe0bed",
+    "keyword": null,
+    "answer": "Si buscas relajarte en contacto con la naturaleza, Merlo, San Luis, es una excelente opción.  Sus paisajes serranos, el aire puro y sus aguas termales son ideales para desconectarte del estrés y disfrutar de la tranquilidad.  Ofrece además una gran variedad de actividades al aire libre como trekking y cabalgatas.\n",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "5491162029649",
+    "refSerialize": "c2b44ced3544c00f2a67ddd99c66baac"
+  },
+  {
+    "ref": "5aa0fd93-736b-4e3a-9196-d4d8aba7d609",
+    "keyword": null,
+    "answer": "¿Te gustaría otra sugerencia?",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "5491162029649",
+    "refSerialize": "287defd7a7b0e92be7df8eb5647af5ca"
+  },
+  {
+    "ref": "3e001371-fc99-40bf-b81e-5d192fb83d79",
+    "keyword": "523bd6af4f3af6997af2545156c2acec",
+    "answer": "Si",
+    "options": {},
+    "from": "5491162029649",
+    "refSerialize": "611b2bffc5c8bf7a02f45d2060b32e20"
+  },
+  {
+    "ref": "ans_ab64710b-1148-44ae-9214-896f3d90c060",
+    "keyword": "key_453a1de0-d009-4bc3-94e5-4efafb4f4fdf",
+    "answer": "Recomendando destino...",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "9b79fb5cb21a556d52df651564e32e02",
+    "from": "5491162029649"
+  },
+  {
+    "ref": "ans_3a4b5fc0-74eb-442c-a98c-5999cf7cf7f8",
+    "keyword": "ans_ab64710b-1148-44ae-9214-896f3d90c060",
+    "answer": "__call_action__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "4551230c0eb12982bf53376ac9b57a7c",
+    "from": "5491162029649"
+  },
+  {
+    "ref": "ans_b3b799e8-9ecc-45eb-bc06-316c054a522f",
+    "keyword": "key_e077cef1-bdcd-4c0d-987c-f1ec68b8dad1",
+    "answer": "__call_action__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "af092fdc2f0b52008399f2a242c183e8",
+    "from": "5491162029649"
+  },
+  {
+    "ref": "ans_31a622cf-d552-49b5-b84f-0852cde4d6e7",
+    "keyword": "ans_b3b799e8-9ecc-45eb-bc06-316c054a522f",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "523bd6af4f3af6997af2545156c2acec",
+    "from": "5491162029649"
+  },
+  {
+    "ref": "80f134c1-f4c8-41a4-b041-4c3bfa36dfe3",
+    "keyword": null,
+    "answer": "Si buscas unas vacaciones en la playa, Villa Gesell es una muy buena opción. Ofrece una amplia costa con playas de arena fina, ideales para disfrutar del sol y el mar. Además, cuenta con una variada oferta gastronómica y de entretenimiento,  y un ambiente ideal para disfrutar de la vida nocturna.\n",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "5491162029649",
+    "refSerialize": "8cbc9abd79eb87835bda3d7e12d340e3"
+  },
+  {
+    "ref": "82386480-eae3-43b3-8aae-b7a068a2ae8a",
+    "keyword": null,
+    "answer": "¿Te gustaría otra sugerencia?",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "5491162029649",
+    "refSerialize": "287defd7a7b0e92be7df8eb5647af5ca"
+  },
+  {
+    "ref": "180d564d-e0fe-499f-9073-ca3e327d505f",
+    "keyword": "523bd6af4f3af6997af2545156c2acec",
+    "answer": "Si",
+    "options": {},
+    "from": "5491162029649",
+    "refSerialize": "611b2bffc5c8bf7a02f45d2060b32e20"
+  },
+  {
+    "ref": "ans_ab64710b-1148-44ae-9214-896f3d90c060",
+    "keyword": "key_453a1de0-d009-4bc3-94e5-4efafb4f4fdf",
+    "answer": "Recomendando destino...",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "9b79fb5cb21a556d52df651564e32e02",
+    "from": "5491162029649"
+  },
+  {
+    "ref": "ans_3a4b5fc0-74eb-442c-a98c-5999cf7cf7f8",
+    "keyword": "ans_ab64710b-1148-44ae-9214-896f3d90c060",
+    "answer": "__call_action__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "4551230c0eb12982bf53376ac9b57a7c",
+    "from": "5491162029649"
+  },
+  {
+    "ref": "ans_b3b799e8-9ecc-45eb-bc06-316c054a522f",
+    "keyword": "key_e077cef1-bdcd-4c0d-987c-f1ec68b8dad1",
+    "answer": "__call_action__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "af092fdc2f0b52008399f2a242c183e8",
+    "from": "5491162029649"
+  },
+  {
+    "ref": "ans_31a622cf-d552-49b5-b84f-0852cde4d6e7",
+    "keyword": "ans_b3b799e8-9ecc-45eb-bc06-316c054a522f",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "523bd6af4f3af6997af2545156c2acec",
+    "from": "5491162029649"
+  },
+  {
+    "ref": "9d08ff84-bb34-460c-aa4f-1ca5bc7edadc",
+    "keyword": null,
+    "answer": "Para unas vacaciones con aventura y naturaleza, te recomiendo las Cataratas del Iguazú.  Es un espectáculo natural impresionante, con saltos de agua increíbles y una biodiversidad única.  Podrás realizar actividades como paseos en barco, caminatas por las pasarelas y disfrutar de la selva subtropical.\n",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "5491162029649",
+    "refSerialize": "70e848a63a71a639792c27e60635e421"
+  },
+  {
+    "ref": "0073c665-0a76-4b04-a840-f6c1edcdd654",
+    "keyword": null,
+    "answer": "¿Te gustaría otra sugerencia?",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "5491162029649",
+    "refSerialize": "287defd7a7b0e92be7df8eb5647af5ca"
+  },
+  {
+    "ref": "5cf79324-a25d-4dcd-8dbd-4d402792d8d9",
+    "keyword": "523bd6af4f3af6997af2545156c2acec",
+    "answer": "No",
+    "options": {},
+    "from": "5491162029649",
+    "refSerialize": "8e18a7e92a2a646d2d79e385a3a290d6"
+  },
+  {
+    "ref": "89268215-422f-45fb-a63f-5b18f20a9f90",
+    "keyword": null,
+    "answer": "Volviendo al menú principal...",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "5491162029649",
+    "refSerialize": "60b569c04d68dcbfb70986cbe5334042"
+  },
+  {
+    "ref": "ans_6eb5aae8-2cf9-4c10-91f5-b8bdcbde82f1",
+    "keyword": "key_70ae5bc0-a325-4250-9b48-63b36840c342",
+    "answer": "¿Qué deseas hacer?\r\n\r\n1- Consultar por un destino\r\n2- Realizar una reserva\r\n3- Recomendame un destino",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 1500,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "1ff40e76486f0de6f3a3f8e4afab741a",
+    "from": "5491162029649"
+  },
+  {
+    "ref": "f4fc7657-f62f-48b5-beeb-031eb76484a3",
+    "keyword": "1ff40e76486f0de6f3a3f8e4afab741a",
+    "answer": "2",
+    "options": {},
+    "from": "5491162029649",
+    "refSerialize": "2294c3d08b53a6effa5df696a15b9d30"
+  },
+  {
+    "ref": "ans_9d9d12f4-9606-4feb-bb6d-00e40d9fd0c9",
+    "keyword": "key_a6e04330-3525-465f-a79e-95e3d017cb30",
+    "answer": "¿Cuál es tu nombre?",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "8413137162534c7f3ad66e9e1985c96c",
+    "from": "5491162029649"
+  }
+]
