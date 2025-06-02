@@ -2,4 +2,5 @@
 google.json
 node_modules
 db.json
-core.glass.log
+core.class.log
+queue.class.log
