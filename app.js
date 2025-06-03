@@ -39,19 +39,23 @@ const barilocheFlow = addKeyword(EVENTS.ACTION)
 .addAnswer(reservarMsg, {capture: true}, async (ctx, {gotoFlow, globalState, state}) => {
 
     //console.log("Bari");
+    try {
+        
+        if(!Array(reservarMsg)[0].includes(ctx.body)){
+            return fallBack("Elija una opción válida")
+        }
     
-    if(!Array(reservarMsg)[0].includes(ctx.body)){
-        return fallBack("Elija una opción válida")
-    }
-
-    switch(ctx.body){
-        case "1":
-            await state.update({destino: "Bariloche"})
-            return gotoFlow(reservarElegidoFlow);
-        
-        case "2":
-            return gotoFlow(stockFlow);
-        
+        switch(ctx.body){
+            case "1":
+                await state.update({destino: "Bariloche"})
+                return gotoFlow(reservarElegidoFlow);
+            
+            case "2":
+                return gotoFlow(stockFlow);
+            
+        }
+    } catch (error) {
+        console.log(error)
     }
 })
 
