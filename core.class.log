@@ -2,61 +2,10 @@
   key: {
     remoteJid: '5491162029649@s.whatsapp.net',
     fromMe: false,
-    id: '3EB08D4194EFEB4F618E6E',
+    id: '3EB0C0D41ECC2E9DC3DC5E',
     participant: undefined
   },
-  messageTimestamp: 1748913269,
-  pushName: 'Cristian Rojas',
-  broadcast: false,
-  messageStubType: 2,
-  messageStubParameters: [ 'No matching sessions found for message' ],
-  body: undefined,
-  from: '5491162029649'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5491162029649@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0A5A1CDC7170F2FE1B8',
-    participant: undefined
-  },
-  messageTimestamp: 1748913270,
-  pushName: 'Cristian Rojas',
-  broadcast: false,
-  messageStubType: 2,
-  messageStubParameters: [ 'No matching sessions found for message' ],
-  body: undefined,
-  from: '5491162029649'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5491162029649@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB08D4194EFEB4F618E6E',
-    participant: undefined
-  },
-  messageTimestamp: 1748913270,
-  pushName: 'Cristian Rojas',
-  broadcast: false,
-  message: Message {
-    conversation: '1',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: '1',
-  from: '5491162029649'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5491162029649@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0A5A1CDC7170F2FE1B8',
-    participant: undefined
-  },
-  messageTimestamp: 1748913270,
+  messageTimestamp: 1748965834,
   pushName: 'Cristian Rojas',
   broadcast: false,
   message: Message {
@@ -71,8 +20,8 @@
   from: '5491162029649'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_4ed080be-1dfb-42ea-a8a9-616a9b20ceb6',
-  keyword: 'key_a8d9bdc4-75d8-4e50-9e3f-ab26c395f6c8',
+  ref: 'ans_bb46ad9c-e6e4-4876-b7a0-fdb5733bf200',
+  keyword: 'key_21884ff7-00d0-4795-93d7-97dd02344cfa',
   answer: '__call_action__',
   options: {
     media: null,
@@ -86,58 +35,16 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'e6392188d79ba073e078463b897bff24'
+  refSerialize: 'd044e41c7c1f84354dffd674a07a2bc8'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5491162029649@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0F732F32E13A0583550',
+    id: '3EB072228C644419060B8B',
     participant: undefined
   },
-  messageTimestamp: 1748913296,
-  pushName: 'Cristian Rojas',
-  broadcast: false,
-  message: Message {
-    conversation: '3',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: '3',
-  from: '5491162029649'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5491162029649@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0B68CCADCE3BA5933FC',
-    participant: undefined
-  },
-  messageTimestamp: 1748913307,
-  pushName: 'Cristian Rojas',
-  broadcast: false,
-  message: Message {
-    conversation: 'No',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'No',
-  from: '5491162029649'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5491162029649@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB099EAD83BD4B70EB765',
-    participant: undefined
-  },
-  messageTimestamp: 1748913313,
+  messageTimestamp: 1748965840,
   pushName: 'Cristian Rojas',
   broadcast: false,
   message: Message {
@@ -155,41 +62,34 @@
   key: {
     remoteJid: '5491162029649@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0ADE6DDEF034FA15F9E',
+    id: '3EB0612B241D6E72E9AC34',
     participant: undefined
   },
-  messageTimestamp: 1748913318,
+  messageTimestamp: 1748965853,
   pushName: 'Cristian Rojas',
   broadcast: false,
   message: Message {
-    conversation: '1',
+    conversation: '2',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: '1',
+  body: '2',
   from: '5491162029649'
 }
-[handleMsg]:  {
-  key: {
-    remoteJid: '5491162029649@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0DB028554B79A3DB79B',
-    participant: undefined
-  },
-  messageTimestamp: 1748913505,
-  pushName: 'Cristian Rojas',
-  broadcast: false,
-  message: Message {
-    conversation: '1',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: '1',
-  from: '5491162029649'
+[ERROR ID (ans_dc416e1c-4503-4a7a-b175-040bdbba7b77)]:  TypeError: Invalid URL
+    at new URL (node:internal/url:818:25)
+    at handleDownload (F:\Programación\Proyectos\ChatBot_Turismo\base-baileys-memory\node_modules\@bot-whatsapp\provider\lib\baileys\index.cjs:136:35)
+    at generalDownload$1 (F:\Programación\Proyectos\ChatBot_Turismo\base-baileys-memory\node_modules\@bot-whatsapp\provider\lib\baileys\index.cjs:182:32)
+    at BaileysProvider.sendMedia (F:\Programación\Proyectos\ChatBot_Turismo\base-baileys-memory\node_modules\@bot-whatsapp\provider\lib\baileys\index.cjs:580:38)
+    at BaileysProvider.sendMessage (F:\Programación\Proyectos\ChatBot_Turismo\base-baileys-memory\node_modules\@bot-whatsapp\provider\lib\baileys\index.cjs:735:41)
+    at CoreClass.sendProviderAndSave (F:\Programación\Proyectos\ChatBot_Turismo\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1561:46)
+    at F:\Programación\Proyectos\ChatBot_Turismo\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1332:32
+    at async runContext (F:\Programación\Proyectos\ChatBot_Turismo\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1444:17)
+    at async cbEveryCtx (F:\Programación\Proyectos\ChatBot_Turismo\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1471:13)
+    at async sendFlow (F:\Programación\Proyectos\ChatBot_Turismo\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1196:17) {
+  code: 'ERR_INVALID_URL',
+  input: './images/Cataratas/Cataratas.jpeg'
 }

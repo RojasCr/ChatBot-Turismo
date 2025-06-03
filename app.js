@@ -35,7 +35,7 @@ const historialFlow = addKeyword("Reservas")
 })
 
 const barilocheFlow = addKeyword(EVENTS.ACTION)
-.addAnswer(barilocheMsg, {delay: 1000, media: `${process.cwd()}/images/Bariloche/Bariloche.jpeg`})
+.addAnswer(barilocheMsg, {delay: 1000, media: `/images/Bariloche/Bariloche.jpeg`})
 .addAnswer(reservarMsg, {capture: true}, async (ctx, {gotoFlow, globalState, state}) => {
 
     //console.log("Bari");
@@ -60,26 +60,30 @@ const barilocheFlow = addKeyword(EVENTS.ACTION)
 })
 
 const cataratasFlow = addKeyword(EVENTS.ACTION)
-.addAnswer(cataratasMsg, {media: `${process.cwd()}/images/Cataratas/Cataratas.jpeg`})
+.addAnswer(cataratasMsg, {media: `/images/Cataratas/Cataratas.jpeg`})
 .addAnswer(reservarMsg, {capture: true}, async (ctx, {gotoFlow, globalState, state}) => {
 
-    if(!Array(reservarMsg)[0].includes(ctx.body)){
-        return fallBack("Elija una opción válida")
-    }
-
-    switch(ctx.body){
-        case "1":
-            await state.update({destino: "Cataratas"})
-            return gotoFlow(reservarElegidoFlow);
-        
-        case "2":
-            return gotoFlow(stockFlow);
-        
+    try {
+        if(!Array(reservarMsg)[0].includes(ctx.body)){
+            return fallBack("Elija una opción válida")
+        }
+    
+        switch(ctx.body){
+            case "1":
+                await state.update({destino: "Cataratas"})
+                return gotoFlow(reservarElegidoFlow);
+            
+            case "2":
+                return gotoFlow(stockFlow);
+            
+        }
+    } catch (error) {
+        console.log(error)
     }
 })
 
 const marDelPlataFlow = addKeyword(EVENTS.ACTION)
-.addAnswer(marDelPlataMsg, {media: `${process.cwd()}/images/Mar del Plata/Mar del Plata.jpeg`})
+.addAnswer(marDelPlataMsg, {media: `/images/Mar del Plata/Mar del Plata.jpeg`})
 .addAnswer(reservarMsg, {capture: true}, async (ctx, {gotoFlow, globalState, state}) => {
 
     if(!Array(reservarMsg)[0].includes(ctx.body)){
@@ -120,8 +124,8 @@ const tigreFlow = addKeyword(EVENTS.ACTION)
 
 const termasFlow = addKeyword(EVENTS.ACTION)
 .addAnswer("Estas son nuestras opciones de termas")
-.addAnswer(gualeguaychuAPMsg, {delay: 1000, media: `${process.cwd()}/images/Termas/Gualeguaychu-AP.jpeg`})
-.addAnswer("También podés disfrutar de las Termas Marinas", {delay: 1000, media: `${process.cwd()}/images/Termas/SanClemente-TourOeste.jpeg`})
+.addAnswer(gualeguaychuAPMsg, {delay: 1000, media: `/images/Termas/Gualeguaychu-AP.jpeg`})
+.addAnswer("También podés disfrutar de las Termas Marinas", {delay: 1000, media: `/images/Termas/SanClemente-TourOeste.jpeg`})
 .addAnswer(termasMsg, {capture: true}, async (ctx, {gotoFlow, state}) => {
     
     if(!Array(termasMsg)[0].includes(ctx.body)){
@@ -349,27 +353,31 @@ const stockFlow = addKeyword(EVENTS.ACTION)
 .addAnswer("¿Qué destino te gustaría consultar hoy?")
 .addAnswer(stockMsg, { capture: true, delay: 1500}, async (ctx, {gotoFlow, flowDynamic, fallBack})=>{
     
-    console.log(Array(stockMsg));
+    try {
+        console.log(Array(stockMsg));
+        
+        if(!Array(stockMsg)[0].includes(ctx.body)){
+            return fallBack("Elija un destino válido")
+        }
     
-    if(!Array(stockMsg)[0].includes(ctx.body)){
-        return fallBack("Elija un destino válido")
+        const options = {
+            1: barilocheFlow,
+            2: cataratasFlow,
+            3: marDelPlataFlow,
+            /*4: merloFlow,
+            5: sanRafaelFlow,
+            6: carlosPazFlow,
+            7: gualeguaychuFlow,
+            8: macachinFlow,
+            9: gesellFlow,
+            10: tigreFlow,*/
+            11: termasFlow
+        }
+        console.log(ctx.body)
+        return gotoFlow(options[ctx.body]);
+    } catch (error) {
+        console.log(error)
     }
-
-    const options = {
-        1: barilocheFlow,
-        2: cataratasFlow,
-        3: marDelPlataFlow,
-        /*4: merloFlow,
-        5: sanRafaelFlow,
-        6: carlosPazFlow,
-        7: gualeguaychuFlow,
-        8: macachinFlow,
-        9: gesellFlow,
-        10: tigreFlow,*/
-        11: termasFlow
-    }
-    console.log(ctx.body)
-    return gotoFlow(options[ctx.body]);
 })
 
 const reservarFlow = addKeyword(EVENTS.ACTION)
