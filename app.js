@@ -35,7 +35,7 @@ const historialFlow = addKeyword("Reservas")
 })
 
 const barilocheFlow = addKeyword(EVENTS.ACTION)
-.addAnswer(barilocheMsg, {delay: 1000, media: "https://chatbot-turismo.onrender.com/images/Bariloche/Bariloche.jpeg"})
+.addAnswer(barilocheMsg, {delay: 1000, media: "/images/Bariloche/Bariloche.jpeg"})
 .addAnswer(reservarMsg, {capture: true}, async (ctx, {gotoFlow, globalState, state}) => {
 
     //console.log("Bari");
@@ -60,7 +60,7 @@ const barilocheFlow = addKeyword(EVENTS.ACTION)
 })
 
 const cataratasFlow = addKeyword(EVENTS.ACTION)
-.addAnswer(cataratasMsg, {media: "https://chatbot-turismo.onrender.com/images/Cataratas/Cataratas.jpeg"})
+.addAnswer(cataratasMsg, {media: "/images/Cataratas/Cataratas.jpeg"})
 .addAnswer(reservarMsg, {capture: true}, async (ctx, {gotoFlow, globalState, state}) => {
 
     try {
@@ -83,7 +83,7 @@ const cataratasFlow = addKeyword(EVENTS.ACTION)
 })
 
 const marDelPlataFlow = addKeyword(EVENTS.ACTION)
-.addAnswer(marDelPlataMsg, {media: `https://chatbot-turismo.onrender.com/images/Mar del Plata/Mar del Plata.jpeg`})
+.addAnswer(marDelPlataMsg, {media: `/images/Mar del Plata/Mar del Plata.jpeg`})
 .addAnswer(reservarMsg, {capture: true}, async (ctx, {gotoFlow, globalState, state}) => {
 
     if(!Array(reservarMsg)[0].includes(ctx.body)){
