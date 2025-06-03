@@ -35,7 +35,7 @@ const historialFlow = addKeyword("Reservas")
 })
 
 const barilocheFlow = addKeyword(EVENTS.ACTION)
-.addAnswer(barilocheMsg, {delay: 1000, media: "https://drive.google.com/file/d/1gnQ-ypJzyf7IfwHJxcZELCchgF0MORoD/view?usp=sharing"})
+.addAnswer(barilocheMsg, {delay: 1000, media: "https://ibb.co/MxpCg4Hx"})
 .addAnswer(reservarMsg, {capture: true}, async (ctx, {gotoFlow, globalState, state}) => {
 
     //console.log("Bari");
