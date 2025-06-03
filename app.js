@@ -35,7 +35,7 @@ const historialFlow = addKeyword("Reservas")
 })
 
 const barilocheFlow = addKeyword(EVENTS.ACTION)
-.addAnswer(barilocheMsg, {delay: 1000, media: `/images/Bariloche/Bariloche.jpeg`})
+.addAnswer(barilocheMsg, {delay: 1000, media: "/images/Bariloche/Bariloche.jpeg"})
 .addAnswer(reservarMsg, {capture: true}, async (ctx, {gotoFlow, globalState, state}) => {
 
     //console.log("Bari");
@@ -60,7 +60,7 @@ const barilocheFlow = addKeyword(EVENTS.ACTION)
 })
 
 const cataratasFlow = addKeyword(EVENTS.ACTION)
-.addAnswer(cataratasMsg, {media: `/images/Cataratas/Cataratas.jpeg`})
+.addAnswer(cataratasMsg, {media: "/images/Cataratas/Cataratas.jpeg"})
 .addAnswer(reservarMsg, {capture: true}, async (ctx, {gotoFlow, globalState, state}) => {
 
     try {
