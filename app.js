@@ -35,7 +35,7 @@ const historialFlow = addKeyword("Reservas")
 })
 
 const barilocheFlow = addKeyword(EVENTS.ACTION)
-.addAnswer(barilocheMsg, {delay: 1000, media: `https://raw.githubusercontent.com/RojasCr/ChatBot-Turismo/refs/heads/main/images/Bariloche/Bariloche.jpeg?token=${process.env.GITHUB_TOKEN}`})
+.addAnswer(barilocheMsg, {delay: 1000, media: `https://github.com/RojasCr/ChatBot-Turismo/blob/be80f099dad0186a755dfc3ad5dfb7d068a3d6d3/images/Bariloche/Bariloche.jpeg?raw=true`})
 .addAnswer(reservarMsg, {capture: true}, async (ctx, {gotoFlow, globalState, state}) => {
 
     //console.log("Bari");
