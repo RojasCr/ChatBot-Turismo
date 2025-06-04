@@ -2,3 +2,7 @@
 google.json
 node_modules
 db.json
+bot.qr.png
+bot_sessions
+queue.class.log
+core.class.log
