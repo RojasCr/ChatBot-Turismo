@@ -125,7 +125,7 @@ const tigreFlow = addKeyword(EVENTS.ACTION)
 const termasFlow = addKeyword(EVENTS.ACTION)
 .addAnswer("Estas son nuestras opciones de termas")
 .addAnswer(gualeguaychuAPMsg, {delay: 1000, media: `https://raw.githubusercontent.com/RojasCr/ChatBot-Turismo/refs/heads/main/images/Termas/Gualeguaychu-AP.jpeg`})
-.addAnswer("También podés disfrutar de las Termas Marinas", {delay: 1000, media: `/images/Termas/SanClemente-TourOeste.jpeg`})
+.addAnswer("También podés disfrutar de las Termas Marinas", {delay: 1000, media: `https://raw.githubusercontent.com/RojasCr/ChatBot-Turismo/refs/heads/main/images/Termas/SanClemente-TourOeste.jpeg`})
 .addAnswer(termasMsg, {capture: true}, async (ctx, {gotoFlow, state}) => {
     
     if(!Array(termasMsg)[0].includes(ctx.body)){
