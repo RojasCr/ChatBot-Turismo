@@ -217,22 +217,6 @@ const reservarElegidoFlow = addKeyword(EVENTS.ACTION)
 
 })
 
-
-// const consultaFlow = addKeyword(EVENTS.ACTION)
-// .addAnswer(consultasMsg , 
-//     {capture: true},
-//     async (ctx, {gotoFlow, flowDynamic}) => {
-        
-//         const prompt = promptGPT;
-//         const consulta = ctx.body;
-//         let answer = await chat(prompt, consulta);
-        
-//         await flowDynamic(answer);
-//         return gotoFlow(otraConsultaFlow)
-        
-//     }
-// )
-
 const recomendacionFlow = addKeyword(EVENTS.ACTION)
 .addAnswer("Recomendando destino...")
 .addAction(async (ctx, {gotoFlow}) => {
@@ -276,7 +260,16 @@ const decidirFlujo = addKeyword(EVENTS.WELCOME)
         return gotoFlow(flujoPrincipal)
     }
 
-    return gotoFlow(flujoSecundario);
+    return gotoFlow(apagarFlow);
+})
+
+const apagarFlow = addKeyword(EVENTS.ACTION)
+.addAction(async(ctx, {endFlow}) => {
+    try {
+        return endFlow();
+    } catch (error) {
+        console.log(error)
+    }
 })
 
 const flujoPrincipal = addKeyword(EVENTS.ACTION)
@@ -448,7 +441,7 @@ const reservarFlow = addKeyword(EVENTS.ACTION)
 const main = async () => {
     const adapterDB = new MockAdapter()
     const adapterFlow = createFlow([
-        decidirFlujo,
+        decidirFlujo, apagarFlow,
         flujoPrincipal, stockFlow,
         recomendacionFlow, menuFlow,
         consultaFlow, barilocheFlow, 
