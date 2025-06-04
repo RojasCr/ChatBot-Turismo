@@ -137,6 +137,10 @@ const termasFlow = addKeyword(EVENTS.ACTION)
         2: "San Clemente de Tour Oeste"
     }
 
+    if(ctx.body === 0){
+        return gotoFlow(menuFlow);
+    }
+
     const selected = options[ctx.body];
 
     await state.update({destino: selected});
@@ -154,7 +158,7 @@ const termasFlow = addKeyword(EVENTS.ACTION)
         
         case "2":
             await flowDynamic("Volviendo al menú rincipal")
-            return gotoFlow(flujoSecundario);
+            return gotoFlow(menuFlow);
         
     }
 })
