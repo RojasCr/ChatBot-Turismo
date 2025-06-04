@@ -60,7 +60,7 @@ const barilocheFlow = addKeyword(EVENTS.ACTION)
 })
 
 const cataratasFlow = addKeyword(EVENTS.ACTION)
-.addAnswer(cataratasMsg, {media: "/images/Cataratas/Cataratas.jpeg"})
+.addAnswer(cataratasMsg, {media: "https://github.com/RojasCr/ChatBot-Turismo/blob/be80f099dad0186a755dfc3ad5dfb7d068a3d6d3/images/Cataratas/Cataratas.jpeg"})
 .addAnswer(reservarMsg, {capture: true}, async (ctx, {gotoFlow, globalState, state}) => {
 
     try {
@@ -83,7 +83,7 @@ const cataratasFlow = addKeyword(EVENTS.ACTION)
 })
 
 const marDelPlataFlow = addKeyword(EVENTS.ACTION)
-.addAnswer(marDelPlataMsg, {media: `/images/Mar del Plata/Mar del Plata.jpeg`})
+.addAnswer(marDelPlataMsg, {media: `https://github.com/RojasCr/ChatBot-Turismo/blob/be80f099dad0186a755dfc3ad5dfb7d068a3d6d3/images/Mar del Plata/Mar del Plata.jpeg`})
 .addAnswer(reservarMsg, {capture: true}, async (ctx, {gotoFlow, globalState, state}) => {
 
     if(!Array(reservarMsg)[0].includes(ctx.body)){
@@ -124,7 +124,7 @@ const tigreFlow = addKeyword(EVENTS.ACTION)
 
 const termasFlow = addKeyword(EVENTS.ACTION)
 .addAnswer("Estas son nuestras opciones de termas")
-.addAnswer(gualeguaychuAPMsg, {delay: 1000, media: `/images/Termas/Gualeguaychu-AP.jpeg`})
+.addAnswer(gualeguaychuAPMsg, {delay: 1000, media: `https://github.com/RojasCr/ChatBot-Turismo/blob/be80f099dad0186a755dfc3ad5dfb7d068a3d6d3/images/Termas/Gualeguaychu-AP.jpeg`})
 .addAnswer("También podés disfrutar de las Termas Marinas", {delay: 1000, media: `/images/Termas/SanClemente-TourOeste.jpeg`})
 .addAnswer(termasMsg, {capture: true}, async (ctx, {gotoFlow, state}) => {
     
@@ -158,22 +158,6 @@ const termasFlow = addKeyword(EVENTS.ACTION)
         
     }
 })
-
-// const playaFlow = addKeyword(EVENTS.ACTION)
-// .addAnswer(sanClementeMsg, {delay: 1000, media: `${process.cwd()}/images/SanClemente/sanClemente.jpeg`})
-// .addAnswer("Visita Mundo Marino", {delay: 1000, media: `${process.cwd()}/images/SanClemente/mundoMarino.jpeg`})
-// .addAnswer("También podés disfrutar de las Termas Marinas", {delay: 1000, media: `${process.cwd()}/images/SanClemente/termasSanClemente.jpeg`})
-// .addAnswer(reservarMsg, {capture: true}, async (ctx, {gotoFlow, globalState, state}) => {
-//     switch(ctx.body){
-//         case "Si":
-//             await state.update({destino: "San Clemente"})
-//             return gotoFlow(reservarFlow);
-        
-//         case "No":
-//             return await globalState.update({encendido: false});
-        
-//     }
-// })
 
 const reservarElegidoFlow = addKeyword(EVENTS.ACTION)
 .addAnswer("¿Cuál es tu nombre?", {capture: true}, async (ctx, {gotoFlow, state, fallBack})=> {
@@ -371,7 +355,8 @@ const stockFlow = addKeyword(EVENTS.ACTION)
             8: macachinFlow,
             9: gesellFlow,
             10: tigreFlow,*/
-            11: termasFlow
+            11: termasFlow,
+            0: decidirFlujo
         }
         console.log(ctx.body)
         return gotoFlow(options[ctx.body]);
