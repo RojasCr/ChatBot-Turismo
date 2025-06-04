@@ -35,7 +35,7 @@ const historialFlow = addKeyword("Reservas")
 })
 
 const barilocheFlow = addKeyword(EVENTS.ACTION)
-.addAnswer(barilocheMsg, {delay: 1000, media: `https://github.com/RojasCr/ChatBot-Turismo/blob/be80f099dad0186a755dfc3ad5dfb7d068a3d6d3/images/Bariloche/Bariloche.jpeg?raw=true`})
+.addAnswer(barilocheMsg, {delay: 1000, media: `https://raw.githubusercontent.com/RojasCr/ChatBot-Turismo/refs/heads/main/images/Bariloche/Bariloche.jpeg?raw=true`})
 .addAnswer(reservarMsg, {capture: true}, async (ctx, {gotoFlow, globalState, state}) => {
 
     //console.log("Bari");
@@ -60,7 +60,7 @@ const barilocheFlow = addKeyword(EVENTS.ACTION)
 })
 
 const cataratasFlow = addKeyword(EVENTS.ACTION)
-.addAnswer(cataratasMsg, {media: "https://github.com/RojasCr/ChatBot-Turismo/blob/be80f099dad0186a755dfc3ad5dfb7d068a3d6d3/images/Cataratas/Cataratas.jpeg"})
+.addAnswer(cataratasMsg, {media: "https://raw.githubusercontent.com/RojasCr/ChatBot-Turismo/refs/heads/main/images/Cataratas/Cataratas.jpeg"})
 .addAnswer(reservarMsg, {capture: true}, async (ctx, {gotoFlow, globalState, state}) => {
 
     try {
@@ -83,7 +83,7 @@ const cataratasFlow = addKeyword(EVENTS.ACTION)
 })
 
 const marDelPlataFlow = addKeyword(EVENTS.ACTION)
-.addAnswer(marDelPlataMsg, {media: `https://github.com/RojasCr/ChatBot-Turismo/blob/be80f099dad0186a755dfc3ad5dfb7d068a3d6d3/images/Mar del Plata/Mar del Plata.jpeg`})
+.addAnswer(marDelPlataMsg, {media: `https://raw.githubusercontent.com/RojasCr/ChatBot-Turismo/refs/heads/main/images/Mar%20del%20Plata/Mar%20del%20Plata.jpeg`})
 .addAnswer(reservarMsg, {capture: true}, async (ctx, {gotoFlow, globalState, state}) => {
 
     if(!Array(reservarMsg)[0].includes(ctx.body)){
@@ -124,7 +124,7 @@ const tigreFlow = addKeyword(EVENTS.ACTION)
 
 const termasFlow = addKeyword(EVENTS.ACTION)
 .addAnswer("Estas son nuestras opciones de termas")
-.addAnswer(gualeguaychuAPMsg, {delay: 1000, media: `https://github.com/RojasCr/ChatBot-Turismo/blob/be80f099dad0186a755dfc3ad5dfb7d068a3d6d3/images/Termas/Gualeguaychu-AP.jpeg`})
+.addAnswer(gualeguaychuAPMsg, {delay: 1000, media: `https://raw.githubusercontent.com/RojasCr/ChatBot-Turismo/refs/heads/main/images/Termas/Gualeguaychu-AP.jpeg`})
 .addAnswer("También podés disfrutar de las Termas Marinas", {delay: 1000, media: `/images/Termas/SanClemente-TourOeste.jpeg`})
 .addAnswer(termasMsg, {capture: true}, async (ctx, {gotoFlow, state}) => {
     
@@ -277,6 +277,11 @@ const decidirFlujo = addKeyword(EVENTS.WELCOME)
 
 const flujoPrincipal = addKeyword(EVENTS.ACTION)
 .addAnswer(welcomeMsg, {delay: 1500}, async (ctx, {gotoFlow}) => {
+    console.log(currentGlobalState);
+    
+    if(!currentGlobalState){
+        return endFlow();
+    }
     return gotoFlow(menuFlow);
 })
 
@@ -284,11 +289,6 @@ const menuFlow = addKeyword(EVENTS.ACTION)
 .addAnswer(menuMsg, {capture: true, delay: 1500}, async (ctx, {endFlow, gotoFlow, globalState}) => {
     try{
         // const currentGlobalState = globalState.getMyState();
-        console.log(currentGlobalState);
-        
-        if(!currentGlobalState){
-            return endFlow();
-        }
         
         if(!Array(menuMsg)[0].includes(ctx.body)){
             return fallBack("Elija una opción válida")
@@ -319,15 +319,7 @@ const flujoSecundario = addKeyword(EVENTS.ACTION)
             return endFlow();
         }
         
-        if(!Array(menuMsg)[0].includes(ctx.body)){
-            return fallBack("Elija una opción válida")
-        }
-        switch(ctx.body){
-            case "1":
-                return gotoFlow(stockFlow)
-            case "2":
-                return gotoFlow(reservarFlow)
-        }
+        return gotoFlow(menuFlow);
     }catch(err){
         console.log(err);
     }
